@@ -1,0 +1,33 @@
+*O JavaScript é uma linguagem interpretada, 
+isso porque os scripts JS são interpretados pelo browser em tempo de execução.
+
+*Operadoers de comparação
+== Igual
+=== Idêntico
+!= Diferente
+!== Nãi idêntico
+< Menor
+> Maior
+<= Menor igual
+>= Maior igual
+
+*Operadores lógicos
+&& e
+|| ou
+! negação
+
+*Operadores Aritméticos
++ Adição
+-Subtração
+* Multiplicação
+/ Divisão
+% Módulo resto de uma divisão
+++ Incremento
+-- Decremento
+
+*Precedência de execução Operadores Aritméticos
+De cima para baixo, da esquerda para direita
+1º * e /
+2º + e -
+
+
