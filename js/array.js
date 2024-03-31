@@ -41,10 +41,11 @@ lista_frutas2.pop()
 lista_frutas2.shift()
 
 
-//Localizar dado no array, retorna a posição que tá o dado salvao, caso ele não exista retorna -1
+//Localizar dado no array, retorna a posição que tá o dado salva, caso ele não exista retorna -1
 var auxiliar = lista_frutas2.indexOf('Bob')
 console.log(auxiliar)
 console.log('Dado que tá no array: ', lista_frutas2.indexOf('Bob'))
+//console.log('Dado que tá no array: ', lista_frutas2.includes('Bob')) //Retorna true ou false
 console.log('Dado que não tá no array: ', lista_frutas2.indexOf('doidera'))
 
 if ( lista_frutas2.indexOf('doidera') === -1){
@@ -52,3 +53,20 @@ if ( lista_frutas2.indexOf('doidera') === -1){
 }else{
     console.log('Dado existe no array')
 }
+
+//Ordenação no array
+var lista_frutas3 = ['Maçã', 'Uva', 'Banana', 'Morango']
+console.log('Array desordenado', lista_frutas3)
+console.log('Array ordenado', lista_frutas3.sort()) 
+
+
+//Ordenação de Array númerico
+
+var lista_numeros = [77, 3, 98, 9]
+
+function ondenaNumeros(a, b){
+    return a - b
+}
+
+console.log('Array númerico desordenado', lista_numeros) 
+console.log('Array númerico ordenado', lista_numeros.sort(ondenaNumeros)) 
