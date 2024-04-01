@@ -15,7 +15,7 @@ function calcular(tipo, valor){
         }
 
     }else if (tipo === 'valor'){
-        //INserir números no input da tela
+        //Inserir números no input da tela
         document.getElementById('resultado').value += valor
     }
 }

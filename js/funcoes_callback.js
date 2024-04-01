@@ -1,4 +1,4 @@
-/*Funções de callback são func~~oes enviadas como parâmentro para outras funções
+/*Funções de callback são funçõees enviadas como parâmentro para outras funções
 Funções de call back são funções anônimas
 */
 function exibirArtigo(id, callbackSucesso, callbackErro){
