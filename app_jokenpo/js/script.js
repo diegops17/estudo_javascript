@@ -72,7 +72,15 @@ function rodada(tipoJogador, escolhaHumano, escolhaPc){
 }
 
 function verificarCampeao(){
-  
+    //Testar esse
+    /* if(pontosHumano === 3 && pontosPc < 3){
+        campeao = 'HUMANO'
+        console.log(campeao, ' CAMPEÃO', pontosHumano)
+    }elseif(pontosPc === 3 && pontosHumano < 3){
+        campeao = 'PC'
+        console.log(campeao, ' CAMPEÃO', pontosPc) 
+    }*/
+
     if(pontosHumano === 3){
         campeao = 'HUMANO'
         console.log(campeao, ' CAMPEÃO', pontosHumano)
