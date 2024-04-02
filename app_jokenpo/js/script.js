@@ -1,12 +1,12 @@
-/**
- * 0 = Pedra
- * 1 = Papel
- * 2 = Tesoura
- */
-
 let pontosHumano = 0
 let pontosPc = 0
+let empate = 0
 let campeao = ''
+
+function salvarNome(){
+    nomeDigitado = document.getElementById('campo-nome-jogador').value
+    document.getElementById('nome-humano').innerHTML = nomeDigitado
+}
 
 function gerarEscolhaMaquina(){
     let opcao_maquina = ''
@@ -19,20 +19,6 @@ function gerarEscolhaMaquina(){
     }else if(numero_aleatorio === 2){
         opcao_maquina = 'tesoura'
     }
-    
-   /*switch(numero_aleatorio){
-        case 0:
-            opcao_maquina = 'pedra'
-            break
-        case 1:
-            opcao_maquina = 'papel'
-            break
-        case 2:
-            opcao_maquina = 'tesoura'
-            break
-        default:
-            opcao_maquina = 'Error'
-    } */
 
     return opcao_maquina
 }
@@ -49,7 +35,6 @@ function verificarEscolhas(jogador, escolha){
     rodada(jogador, escolha, escolhaPc)
 }
 
-
 function rodada(tipoJogador, escolhaHumano, escolhaPc){
     if (tipoJogador === 'humano'){
         if(
@@ -57,14 +42,19 @@ function rodada(tipoJogador, escolhaHumano, escolhaPc){
             (escolhaHumano == 'tesoura' && escolhaPc == 'papel') ||
             (escolhaHumano == 'papel' && escolhaPc == 'pedra')){
                 pontosHumano += 1
+                document.getElementById('pontuacao-humano').innerHTML = pontosHumano
+                
                 console.log('HUMANO venceu, PONTOS: ', pontosHumano )
         }else if(
             (escolhaPc == 'pedra' && escolhaHumano == 'tesoura') ||
             (escolhaPc == 'tesoura' && escolhaHumano == 'papel') ||
             (escolhaPc == 'papel' && escolhaHumano == 'pedra')){
                 pontosPc += 1
+                document.getElementById('pontuacao-pc').innerHTML = pontosPc
                 console.log('PC venceu, PONTOS: ', pontosPc)
         }else{
+            empate += 1
+            document.getElementById('empate').innerHTML = empate
             console.log('EMPATE')  
         }
     }
