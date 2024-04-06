@@ -74,6 +74,7 @@ function verificarCampeao(){
     if(pontosHumano === 3){
         campeao = 'HUMANO'
         console.log(campeao, ' CAMPEÃO', pontosHumano)
+        //window.location.reload() //Testar
     }else if(pontosPc === 3){
         campeao = 'PC'
         console.log(campeao, ' CAMPEÃO', pontosPc)
